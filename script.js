@@ -170,15 +170,6 @@ searchText.addEventListener("input", function handleSearch(e) {
     }
   }
 });
-searchText.addEventListener("focusout", (e) => {
-  searchCard.style.height="0"
-})
-searchText.addEventListener("focus", () => {
-  if (searchText.value) {
-    
-    searchCard.style.height="200px"
-  }
-})
 
 // handling favourite and unfavourite from search bar
 function handleFav(e, item) {
