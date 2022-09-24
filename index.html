@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style>
+      #searchCard::-webkit-scrollbar {
+  display: none;
+}
+        
+      
+    </style>
+  </head>
+  <body class="bg-black">
+    <!-- nav bar  -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid position-relative">
+        <a class="navbar-brand" href="#home"
+          ><img
+            src="download (2).png"
+            alt="nerwork error"
+            width="70px"
+            class="rounded"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: #adb5bd"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #adb5bd" href="#favourite"
+                >Favourite</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search" autocomplete="off">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              id="searchText"
+            />
+          </form>
+        </div>
+        <div
+          style="
+            width: 24%;
+            height: 0rem;
+            right: 6%;
+            top: 81%;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: all 0.4s ease-in-out;
+          "
+          class="rounded position-absolute bg-black"
+          id="searchCard"
+        ></div>
+      </div>
+    </nav>
+    <!-- root element  -->
+    <div
+      id="root"
+      class="mt-5 mx-sm-auto container-sm d-flex flex-wrap gap-4 flex-column flex-sm-row align-items-center"
+    ></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b5bf280a7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
