@@ -22,21 +22,16 @@ function loadContent() {
     fragmentId = location.hash.slice(1);
   if (fragmentId === "favourite") {
     root.innerHTML = pages[fragmentId];
-    console.log("hello");
 
     let unfavButton = document.querySelectorAll(".unfavButton");
-    console.log(unfavButton);
     if (unfavButton) {
       for (let button of unfavButton) {
         button.addEventListener(
           "click",
           (e) => {
-            console.log(e);
-            console.log(e.target.parentElement.firstElementChild.innerText);
             let index = favouriteMoiveList.indexOf(
               e.target.parentElement.firstElementChild.innerText
             );
-            console.log(index);
 
             favouriteMoiveList.splice(index, 1);
             window.localStorage.setItem(
@@ -70,7 +65,6 @@ window.onload = async () => {
   appData = [...data];
   let homeData = "";
   data.forEach((element) => {
-    console.log(element);
 // home page content 
     homeData += `<div class="card border border-5 border-dark bg-transparent text-white flex-grow-1" style="width: 18rem;">
         <img src=${element.thumbnail.path
@@ -199,7 +193,6 @@ function handleFav(e, item) {
     window.localStorage.setItem("favData", JSON.stringify(favouriteMoiveList));
     savedLocalFavData = JSON.parse(window.localStorage.getItem("favData"));
 
-    console.log(typeof savedLocalFavData);
     e.target.innerText = "unfavourite";
     appData.forEach((element) => {
       for (let item of savedLocalFavData) {
