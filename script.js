@@ -1,7 +1,7 @@
 
 const publicKey = "263c9e44a50eecd7abd51e8a1d2209afd40de610";
 const url =
-  "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=ec3849badb96d2b26ee646d5e8007484&hash=2e10f0ccbb358a2583a1f31566b4d1e4 ";
+  "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=ec3849badb96d2b26ee646d5e8007484&hash=2e10f0ccbb358a2583a1f31566b4d1e4 ";
 
 
 // two pages of website and initial content to render 
